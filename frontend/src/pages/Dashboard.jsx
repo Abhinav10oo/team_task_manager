@@ -76,7 +76,7 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] flex flex-col text-slate-850">
+    <div className="min-h-screen bg-[#F8FAFC] flex flex-col text-slate-800">
       <Navbar />
       <div className="flex-1 container mx-auto px-4 py-8 max-w-7xl">
         
@@ -84,13 +84,13 @@ const Dashboard = () => {
         <div className="bg-slate-900 border border-slate-800 text-slate-250 rounded-3xl p-6 md:p-8 shadow-md mb-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <div>
             <h1 className="text-3xl font-extrabold tracking-tight text-white">👋 Hello, {user?.name}!</h1>
-            <p className="text-slate-350 text-sm mt-2 max-w-xl">
+            <p className="text-slate-400 text-sm mt-2 max-w-xl">
               Here is your overall task flow summary. You are currently collaborating in <strong className="text-indigo-400 font-bold">{stats.projectsCount} projects</strong> with <strong className="text-indigo-400 font-bold">{stats.tasksCount} active task allocations</strong>.
             </p>
           </div>
           <Link
             to="/projects"
-            className="bg-indigo-650 hover:bg-indigo-700 text-white font-bold text-sm px-6 py-3 rounded-2xl shadow transition"
+            className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm px-6 py-3 rounded-2xl shadow transition"
           >
             📁 View All Workspaces
           </Link>
@@ -104,7 +104,7 @@ const Dashboard = () => {
           </div>
           <div className="bg-white border border-slate-200 p-5 rounded-2xl shadow-sm hover:shadow transition-shadow">
             <span className="text-slate-400 text-xs font-bold uppercase tracking-wider block">In Progress</span>
-            <span className="text-3xl font-extrabold text-indigo-650 mt-1 block">{stats.inProgressTasks}</span>
+            <span className="text-3xl font-extrabold text-indigo-600 mt-1 block">{stats.inProgressTasks}</span>
           </div>
           <div className="bg-white border border-slate-200 p-5 rounded-2xl shadow-sm hover:shadow transition-shadow">
             <span className="text-slate-400 text-xs font-bold uppercase tracking-wider block">Completed</span>
@@ -142,7 +142,7 @@ const Dashboard = () => {
                       className="flex justify-between items-center bg-slate-50/50 hover:bg-slate-50 border border-slate-200/80 p-4 rounded-xl transition"
                     >
                       <div className="min-w-0 pr-4">
-                        <span className="text-[10px] font-bold text-indigo-650 uppercase tracking-wider block mb-0.5">
+                        <span className="text-[10px] font-bold text-indigo-600 uppercase tracking-wider block mb-0.5">
                           {task.projectId?.name || 'Workspace'}
                         </span>
                         <span className="font-semibold text-slate-800 text-sm block truncate">
@@ -154,7 +154,7 @@ const Dashboard = () => {
                         <span className={`text-xs px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider border ${
                           task.status === 'In Progress' 
                             ? 'bg-indigo-50 border-indigo-100 text-indigo-700' 
-                            : 'bg-slate-100 border-slate-200 text-slate-650'
+                            : 'bg-slate-100 border-slate-200 text-slate-500'
                         }`}>
                           {task.status}
                         </span>
@@ -223,7 +223,7 @@ const Dashboard = () => {
             <div className="mt-auto border-t border-slate-100 pt-4 flex flex-col gap-2">
               <Link
                 to="/my-tasks"
-                className="text-center bg-slate-100 hover:bg-indigo-650 hover:text-white text-slate-700 font-bold text-xs py-3 rounded-xl transition border border-slate-200/80 shadow-sm"
+                className="text-center bg-slate-100 hover:bg-indigo-700 hover:text-white text-slate-700 font-bold text-xs py-3 rounded-xl transition border border-slate-200/80 shadow-sm"
               >
                 📋 View Board Assignments
               </Link>

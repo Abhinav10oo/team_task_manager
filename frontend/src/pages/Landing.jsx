@@ -41,7 +41,7 @@ const Landing = () => {
             </span>
           </div>
 
-          <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-350">
+          <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-400">
             <a href="#features" className="hover:text-indigo-400 transition-colors">Features</a>
             <a href="#workflow" className="hover:text-indigo-400 transition-colors">Workflow</a>
             <a href="#stats" className="hover:text-indigo-400 transition-colors">Statistics</a>
@@ -113,7 +113,7 @@ const Landing = () => {
                   </Link>
                   <Link
                     to="/login"
-                    className="w-full sm:w-auto bg-slate-800 hover:bg-slate-750 text-white font-bold text-sm px-8 py-3.5 rounded-xl border border-slate-700 transition-all text-center"
+                    className="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-white font-bold text-sm px-8 py-3.5 rounded-xl border border-slate-700 transition-all text-center"
                   >
                     Learn More
                   </Link>
@@ -181,11 +181,11 @@ const Landing = () => {
 
             <div className="col-span-8 bg-slate-800 rounded-3xl p-6 border border-slate-700/80 relative overflow-hidden h-48 flex flex-col justify-between shadow-md">
               <div className="flex justify-between items-start">
-                <span className="text-xs font-bold text-slate-450 uppercase tracking-widest">Efficiency index</span>
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Efficiency index</span>
                 <span className="text-indigo-400 font-extrabold text-sm">80%</span>
               </div>
               <div className="w-full bg-slate-900 h-2 rounded-full overflow-hidden mb-1">
-                <div className="bg-indigo-55 h-full" style={{ width: '80%' }}></div>
+                <div className="bg-indigo-500 h-full" style={{ width: '80%' }}></div>
               </div>
               <div>
                 <p className="text-[10px] text-slate-400 leading-snug">
@@ -269,14 +269,14 @@ const Landing = () => {
             {workflowSteps.map((step, idx) => (
               <div
                 key={idx}
-                className="bg-slate-800/40 border border-slate-700/85 p-6 rounded-2xl flex gap-6 items-start hover:bg-slate-800/60 transition"
+                className="bg-slate-800/40 border border-slate-700/80 p-6 rounded-2xl flex gap-6 items-start hover:bg-slate-800/60 transition"
               >
                 <span className="text-lg font-black text-indigo-400 leading-none select-none">
                   {step.num}
                 </span>
                 <div className="flex flex-col">
                   <h4 className="text-base font-bold text-white leading-snug">{step.title}</h4>
-                  <p className="text-xs text-slate-450 mt-1.5 leading-relaxed">{step.desc}</p>
+                  <p className="text-xs text-slate-400 mt-1.5 leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             ))}
@@ -286,7 +286,7 @@ const Landing = () => {
       </section>
 
       {/* Numerical Stats section */}
-      <section id="stats" className="py-20 px-4 bg-slate-800/40 border-b border-slate-850">
+      <section id="stats" className="py-20 px-4 bg-slate-800/40 border-b border-slate-800">
         <div className="container mx-auto max-w-7xl flex flex-wrap justify-around gap-8 text-center">
           <div className="flex flex-col items-center">
             <span className="text-4xl md:text-5xl font-black text-white tracking-tight">30+</span>

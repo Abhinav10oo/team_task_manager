@@ -80,8 +80,6 @@ https://your-backend-url
 
 ## Folder Structure
 
-## Folder Structure
-
 ```bash
 team-task-manager/
 │
@@ -188,7 +186,10 @@ Add screenshots to the repo by placing image files in the root or a `screenshots
 - Example file: `screenshots/project-board.png`
 - In README, reference it like:
   ```markdown
-  ![Project Board](screenshots/project-board.png)
+  ![Project Board](Screenshot/HomePage.png)
+  ![Project Board](Screenshot/Login.png)
+  ![Project Board](Screenshot/signup.png)
+  ![Project Board](Screenshot/Workspace.png)
   ```
 
 ## Role Based Access

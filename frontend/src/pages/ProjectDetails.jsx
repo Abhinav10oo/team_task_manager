@@ -187,7 +187,7 @@ const ProjectDetails = () => {
         <div className="flex-1 flex flex-col justify-center items-center gap-4">
           <span className="text-4xl">⚠️</span>
           <h2 className="text-xl font-bold text-slate-900">Project Not Found</h2>
-          <Link to="/projects" className="text-indigo-650 hover:underline">Return to dashboard</Link>
+          <Link to="/projects" className="text-indigo-600 hover:underline">Return to dashboard</Link>
         </div>
       </div>
     );
@@ -202,7 +202,7 @@ const ProjectDetails = () => {
         <div className="container mx-auto max-w-7xl">
           <div className="flex flex-col md:flex-row justify-between items-start gap-4">
             <div>
-              <div className="flex items-center gap-2 text-xs font-bold text-slate-450 uppercase tracking-widest mb-1.5">
+              <div className="flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-widest mb-1.5">
                 <Link to="/projects" className="hover:text-indigo-600">Workspaces</Link>
                 <span>/</span>
                 <span className="text-slate-600">{project.name}</span>
@@ -369,7 +369,7 @@ const ProjectDetails = () => {
               <div className="bg-slate-100/60 border border-slate-200/50 rounded-2xl p-4 flex flex-col gap-4 min-h-[500px]">
                 <div className="flex justify-between items-center px-1">
                   <span className="font-extrabold text-slate-800 tracking-tight flex items-center gap-2">
-                    <span className="h-2.5 w-2.5 rounded-full bg-indigo-650 animate-pulse"></span> In Progress
+                    <span className="h-2.5 w-2.5 rounded-full bg-indigo-600 animate-pulse"></span> In Progress
                   </span>
                   <span className="bg-indigo-50 text-indigo-700 font-bold text-xs px-2.5 py-0.5 rounded-full border border-indigo-100">
                     {inProgressTasks.length}
@@ -453,7 +453,7 @@ const ProjectDetails = () => {
               </div>
               <div className="bg-white border border-slate-200/80 p-5 rounded-2xl shadow-sm">
                 <span className="text-slate-500 text-xs font-bold uppercase tracking-wider block">In Progress</span>
-                <span className="text-3xl font-extrabold text-indigo-650 mt-1 block">{dashboardStats.inProgressTasks}</span>
+                <span className="text-3xl font-extrabold text-indigo-600 mt-1 block">{dashboardStats.inProgressTasks}</span>
               </div>
               <div className="bg-white border border-slate-200/80 p-5 rounded-2xl shadow-sm">
                 <span className="text-slate-500 text-xs font-bold uppercase tracking-wider block">Done</span>
@@ -474,7 +474,7 @@ const ProjectDetails = () => {
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse">
                   <thead>
-                    <tr className="bg-slate-50 border-b border-slate-100 text-xs font-bold text-slate-650 uppercase tracking-wider">
+                    <tr className="bg-slate-50 border-b border-slate-100 text-xs font-bold text-slate-500 uppercase tracking-wider">
                       <th className="px-6 py-3">Member</th>
                       <th className="px-6 py-3 text-center">Allocated</th>
                       <th className="px-6 py-3 text-center">To Do</th>
@@ -486,7 +486,7 @@ const ProjectDetails = () => {
                   <tbody className="divide-y divide-slate-100 text-sm">
                     {dashboardStats.tasksPerUser?.length === 0 ? (
                       <tr>
-                        <td colSpan="6" className="text-center py-8 text-slate-450 italic">No task allocations recorded yet.</td>
+                        <td colSpan="6" className="text-center py-8 text-slate-400 italic">No task allocations recorded yet.</td>
                       </tr>
                     ) : (
                       dashboardStats.tasksPerUser?.map((item) => {
@@ -541,7 +541,7 @@ const ProjectDetails = () => {
               {isAdmin && (
                 <button
                   onClick={() => setShowAddMember(true)}
-                  className="bg-indigo-650 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl border border-indigo-500/20 transition shadow-sm"
+                  className="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl border border-indigo-500/20 transition shadow-sm"
                 >
                   ➕ Invite Member
                 </button>

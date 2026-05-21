@@ -41,7 +41,7 @@ const Login = () => {
         
         {/* Brand/logo Header */}
         <div className="flex flex-col items-center mb-8">
-          <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-indigo-550 to-indigo-700 flex items-center justify-center text-2xl shadow-md text-white font-bold">
+          <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-indigo-700 flex items-center justify-center text-2xl shadow-md text-white font-bold">
             📅
           </div>
           <h2 className="text-3xl font-extrabold text-slate-800 mt-4 tracking-tight">Welcome Back</h2>
@@ -104,7 +104,7 @@ const Login = () => {
 
         <p className="mt-6 text-center text-sm text-slate-500">
           Don't have an account?{' '}
-          <Link to="/signup" className="text-indigo-650 hover:text-indigo-700 font-semibold hover:underline">
+          <Link to="/signup" className="text-indigo-600 hover:text-indigo-700 font-semibold hover:underline">
             Register for free
           </Link>
         </p>

@@ -67,7 +67,7 @@ const AddMemberModal = ({ project, onAddMember, onClose }) => {
             <button
               type="submit"
               disabled={searching}
-              className="bg-indigo-650 hover:bg-indigo-700 text-white font-semibold px-4 rounded-xl shadow-sm text-sm transition disabled:bg-indigo-400"
+              className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 rounded-xl shadow-sm text-sm transition disabled:bg-indigo-400"
             >
               {searching ? '...' : 'Search'}
             </button>

@@ -55,7 +55,7 @@ const MyTasks = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] flex flex-col text-slate-850">
+    <div className="min-h-screen bg-[#F8FAFC] flex flex-col text-slate-800">
       <Navbar />
       <div className="flex-1 container mx-auto px-4 py-8 max-w-7xl">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8 border-b border-slate-200/80 pb-6">

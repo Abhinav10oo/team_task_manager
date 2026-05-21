@@ -25,7 +25,7 @@ const ProjectCard = ({ project, isAdmin, onDeleteClick }) => {
                   e.stopPropagation();
                   onDeleteClick(project);
                 }}
-                className="text-slate-450 hover:text-rose-600 hover:bg-rose-50 border border-transparent hover:border-rose-100 p-1.5 rounded-xl transition duration-200 flex items-center justify-center"
+                className="text-slate-400 hover:text-rose-600 hover:bg-rose-50 border border-transparent hover:border-rose-100 p-1.5 rounded-xl transition duration-200 flex items-center justify-center"
                 title="Delete Workspace"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
