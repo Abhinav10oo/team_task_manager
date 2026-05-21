@@ -79,62 +79,75 @@ https://your-backend-url
 
 
 ## Folder Structure
-`
-├── backend
-│   ├── config
+
+## Folder Structure
+
+```bash
+team-task-manager/
+│
+├── backend/
+│   ├── config/
 │   │   └── db.js
-│   ├── controllers
+│   │
+│   ├── controllers/
 │   │   ├── authController.js
 │   │   ├── projectController.js
 │   │   └── taskController.js
-│   ├── middleware
+│   │
+│   ├── middleware/
 │   │   └── auth.js
-│   ├── models
+│   │
+│   ├── models/
+│   │   ├── User.js
 │   │   ├── Project.js
-│   │   ├── Task.js
-│   │   └── User.js
-│   ├── routes
+│   │   └── Task.js
+│   │
+│   ├── routes/
 │   │   ├── auth.js
 │   │   ├── projects.js
 │   │   └── tasks.js
-│   ├── package-lock.json  
+│   │
+│   ├── server.js
 │   ├── package.json
-│   └── server.js
-└── frontend
-    ├── dist
-    │   ├── assets
-    │   │   ├── index-C7BDerJA.js
-    │   │   └── index-DOoQfaUO.css
-    │   └── index.html
-    ├── src
-    │   ├── components
-    │   │   ├── AddMemberModal.jsx
-    │   │   ├── Navbar.jsx
-    │   │   ├── PrivateRoute.jsx
-    │   │   ├── ProjectCard.jsx
-    │   │   ├── TaskCard.jsx
-    │   │   └── TaskForm.jsx
-    │   ├── context
-    │   │   └── AuthContext.jsx
-    │   ├── pages
-    │   │   ├── Dashboard.jsx
-    │   │   ├── Landing.jsx
-    │   │   ├── Login.jsx
-    │   │   ├── MyTasks.jsx
-    │   │   ├── Profile.jsx
-    │   │   ├── ProjectDetails.jsx
-    │   │   ├── Projects.jsx
-    │   │   └── Signup.jsx
-    │   ├── utils
-    │   │   └── api.js
-    │   ├── App.jsx
-    │   ├── index.css
-    │   └── main.jsx
-    ├── index.html
-    ├── package-lock.json
-    ├── package.json
-    ├── postcss.config.js
-    └── tailwind.config.js
+│   └── .env
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── AddMemberModal.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── PrivateRoute.jsx
+│   │   │   ├── ProjectCard.jsx
+│   │   │   ├── TaskCard.jsx
+│   │   │   └── TaskForm.jsx
+│   │   │
+│   │   ├── context/
+│   │   │   └── AuthContext.jsx
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Landing.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── MyTasks.jsx
+│   │   │   ├── Profile.jsx
+│   │   │   ├── ProjectDetails.jsx
+│   │   │   ├── Projects.jsx
+│   │   │   └── Signup.jsx
+│   │   │
+│   │   ├── utils/
+│   │   │   └── api.js
+│   │   │
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   │
+│   ├── package.json
+│   ├── tailwind.config.js
+│   ├── postcss.config.js
+│   └── .env
+│
+└── README.md
+```
 
 ## Installation and Setup
 1. Clone the repository
